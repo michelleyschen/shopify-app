@@ -1,0 +1,3 @@
+{
+  "extends": ["plugin:shopify/typescript", "plugin:shopify/typescript-prettier"]
+}

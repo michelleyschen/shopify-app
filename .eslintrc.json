@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "plugin:shopify/typescript-react",
+    "plugin:shopify/typescript-prettier",
+    "plugin:shopify/polaris",
+    "plugin:shopify/jest"
+  ]
+}
