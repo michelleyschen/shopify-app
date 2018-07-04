@@ -1,0 +1,8 @@
+{
+  "heading": "La ricerca di {resourceName} non ha prodotto alcun risultato.",
+  "body": "Controlla l'indirizzo web e riprova, oppure cerca {resourceName} sulla pagina {pageName}.",
+  "cta": "Vai a {pageName}",
+  "defaultResource": "pagina",
+  "defaultPageName": "Home di Shopify",
+  "defaultTitle": "Home"
+}

@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es2015",
+      "es2016",
+      "es2017",
+      "esnext.asynciterable",
+      "scripthost"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "*": ["*", "packages/*", "app/*", "config/typescript/modules/*"]
+    },
+    "rootDir": ".",
+    "strict": true,
+    "target": "esnext",
+    "typeRoots": ["./node_modules/@types", "./node_modules/jest-enzyme"]
+  },
+  "exclude": ["**/*/node_modules/**/*"],
+  "include": [
+    "./config/typescript/**/*",
+    "./app/**/*",
+    "./packages/**/*",
+    "./client/**/*",
+    "./server/**/*",
+    "./tests/**/*"
+  ]
+}
