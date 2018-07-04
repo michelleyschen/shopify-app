@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {AppContainer} from 'react-hot-loader';
 import {BrowserRouter} from 'react-router-dom';
-import App from '../app';
 
-export default function renderApp(appContainer: HTMLElement) {
-  ReactDOM.hydrate(
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>,
-    appContainer,
-  );
+export default function renderApp(
+  appContainerElement: HTMLElement | null,
+  App: React.ComponentType,
+) {
+  if (appContainerElement) {
+    ReactDOM.hydrate(
+      <AppContainer>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </AppContainer>,
+      appContainerElement,
+    );
+  }
 }
