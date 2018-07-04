@@ -1,0 +1,7 @@
+source_language: en
+target_languages: [fr, de, ja, pt-BR, it, es]
+components:
+  - name: 'merchant'
+    scheme: react
+    paths:
+      - app/**/translations/{{language}}.json

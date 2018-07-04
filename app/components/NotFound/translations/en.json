@@ -1,0 +1,8 @@
+{
+  "heading": "The {resourceName} you're looking for couldn't be found",
+  "body": "Check the web address and try again, or try navigating to the {resourceName} from {pageName}.",
+  "cta": "Go to {pageName}",
+  "defaultResource": "page",
+  "defaultPageName": "Shopify Home",
+  "defaultTitle": "Home"
+}

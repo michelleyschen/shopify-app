@@ -1,0 +1,42 @@
+containers:
+  static_docker_container:
+    docker: gcr.io/shopify-docker-images/apps/production/web-platform-ci-node:10.11.0-yarn-1.12.3
+
+shared:
+  lint: &lint
+    label: '💅🏾 Lint and format'
+    cache:
+      - build/cache/eslint-graphql
+      - build/cache/eslint-scripts
+      - node_modules
+    run:
+      - ./scripts/yarn-install-and-prune.sh
+      - yarn run sewing-kit lint
+    timeout: 5m
+
+  type-check: &type-check
+    label: '💊 Type check'
+    cache:
+      - node_modules
+    run:
+      - ./scripts/yarn-install-and-prune.sh
+      - yarn run sewing-kit type-check
+    timeout: 5m
+
+  unit-tests: &unit-tests
+    label: '🤓 Unit tests'
+    cache:
+      - build/cache/jest
+      - node_modules
+    run:
+      - ./scripts/yarn-install-and-prune.sh
+      - CI=true yarn run sewing-kit test --maxWorkers 2
+    timeout: 5m
+
+pipelines:
+  your-app-name:
+    default_container: static_docker_container
+    steps:
+      - <<: *lint
+      - <<: *type-check
+      - <<: *unit-tests

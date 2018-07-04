@@ -1,0 +1,8 @@
+{
+  "heading": "No pudimos encontrar lo {resourceName} que estás buscando",
+  "body": "Verifica la dirección web y vuelve a intentarlo, o intenta navegar en {resourceName} de {pageName}.",
+  "cta": "Visita {pageName}",
+  "defaultResource": "página",
+  "defaultPageName": "Inicio Shopify",
+  "defaultTitle": "Inicio"
+}

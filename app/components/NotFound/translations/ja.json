@@ -1,0 +1,8 @@
+{
+  "heading": "お探しの{resourceName}は見つかりませんでした",
+  "body": "{pageName}から{resourceName}を検索するか、ウェブアドレスを確認して再検索してください。",
+  "cta": "{pageName}に移動する",
+  "defaultResource": "ページ",
+  "defaultPageName": "Shopifyホーム",
+  "defaultTitle": "ホーム"
+}

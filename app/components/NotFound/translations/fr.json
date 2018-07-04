@@ -1,0 +1,8 @@
+{
+  "heading": "La ressource intitulée « {resourceName} » que vous recherchez est introuvable",
+  "body": "Vérifiez l'adresse web et refaites une tentative, ou essayez de vous rendre à {resourceName} à partir de {pageName}.",
+  "cta": "Aller à {pageName}",
+  "defaultResource": "page",
+  "defaultPageName": "Accueil Shopify",
+  "defaultTitle": "Accueil"
+}
