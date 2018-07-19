@@ -28,6 +28,7 @@
     "@shopify/polyfills": "^0.0.5",
     "@shopify/react-compose": "^0.1.10",
     "@shopify/react-effect": "^1.0.3",
+    "@shopify/react-form-state": "^0.7.1",
     "@shopify/react-html": "^6.2.0",
     "@shopify/react-i18n": "^0.7.2",
     "@shopify/react-network": "^1.0.5",

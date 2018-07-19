@@ -1,0 +1,8 @@
+mutation CustomerDelete($input: CustomerDeleteInput!) {
+  customerDelete(input: $input) {
+    userErrors {
+      field
+      message
+    }
+  }
+}
