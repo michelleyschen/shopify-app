@@ -1,0 +1,10 @@
+{
+  "title": "Customers",
+  "resourceName": {
+    "singular": "customer",
+    "plural": "customers"
+  },
+  "viewDetails": "View details for {name}",
+  "customersAsc": "Customer A-Z",
+  "customersDesc": "Customer Z-A"
+}

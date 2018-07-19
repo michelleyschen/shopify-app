@@ -939,6 +939,15 @@
     react-tree-walker "^4.3.0"
     tslib "^1.9.3"
 
+"@shopify/react-form-state@^0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@shopify/react-form-state/-/react-form-state-0.7.1.tgz#40df8447779a1dca74907d706cb2b868fb205299"
+  integrity sha512-LE3EKWSU3KPntS+RIefLPKFGNfAdBF8IEwj8x3b730fiQRSGvzQ9nUeGWHNFwJA2Rp7s0LL7ScVcbJRtu0GXAQ==
+  dependencies:
+    lodash "^4.17.10"
+    lodash-decorators "^6.0.0"
+    tslib "^1.9.3"
+
 "@shopify/react-html@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@shopify/react-html/-/react-html-3.0.3.tgz#247773a23bdfa46769ac74112c09c4c2bd6785d8"
@@ -8874,6 +8883,13 @@ lodash-decorators@^4.3.5:
   dependencies:
     tslib "^1.7.1"
 
+lodash-decorators@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/lodash-decorators/-/lodash-decorators-6.0.1.tgz#f5347811ee7792eba4719042354541578142273d"
+  integrity sha512-1M0YC8G3nFTkejZEk2ehyvryEdcqj6xATH+ybI8j53cLs/bKRsavaE//y7nz/A0vxEFhxYqev7vdWfsuTJ1AtQ==
+  dependencies:
+    tslib "^1.9.2"
+
 lodash-webpack-plugin@^0.11.5:
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/lodash-webpack-plugin/-/lodash-webpack-plugin-0.11.5.tgz#c4bd064b4f561c3f823fa5982bdeb12c475390b9"
@@ -13747,7 +13763,7 @@ tsconfig-paths@^3.6.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.7.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.7.1, tslib@^1.9.0, tslib@^1.9.2, tslib@^1.9.3:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.3.tgz#d7e4dd79245d85428c4d7e4822a79917954ca286"
 

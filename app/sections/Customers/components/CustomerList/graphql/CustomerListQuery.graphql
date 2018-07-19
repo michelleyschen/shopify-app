@@ -1,0 +1,11 @@
+query CustomerList($reverse: Boolean) {
+  customers(first: 10, sortKey: NAME, reverse: $reverse) {
+    edges {
+      node {
+        id
+        displayName
+        lifetimeDuration
+      }
+    }
+  }
+}
