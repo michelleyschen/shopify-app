@@ -11,6 +11,9 @@ module.exports = function sewingKitConfig(plugins, env) {
   return {
     name: 'your-app-name',
     plugins: [
+      plugins.experiments({
+        reactLoadable: true,
+      }),
       plugins.devServer({
         ip,
         port,
@@ -19,6 +22,7 @@ module.exports = function sewingKitConfig(plugins, env) {
       plugins.vendors([
         'react',
         'react-dom',
+        'react-loadable',
         'react-router',
         'react-router-dom',
         '@shopify/javascript-utilities',
