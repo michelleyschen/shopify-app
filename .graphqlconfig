@@ -1,0 +1,4 @@
+{
+  "schemaPath": "build/graphql/schemas/default.json",
+  "includes": ["app/**/*.graphql", "graphql/schema.graphql"]
+}

@@ -28,6 +28,10 @@ module.exports = function sewingKitConfig(plugins: Plugins, env: Env) {
         'react-router',
         'react-router-dom',
         'prop-types',
+        'react-apollo',
+        'apollo-cache-inmemory',
+        'apollo-client',
+        'apollo-link-http',
       ]),
       plugins.jest((config) => {
         config.setupFiles.push(join(tests, 'setup.ts'));
