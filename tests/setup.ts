@@ -1,4 +1,5 @@
 import 'raf/polyfill';
+import 'isomorphic-fetch';
 import * as Enzyme from 'enzyme';
 
 // eslint-disable-next-line typescript/no-var-requires

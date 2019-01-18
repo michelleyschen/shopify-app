@@ -1,3 +1,4 @@
+import 'isomorphic-fetch';
 import * as dotenv from 'dotenv';
 
 // Sewing Kit is currently hardcoding this on the server, which breaks

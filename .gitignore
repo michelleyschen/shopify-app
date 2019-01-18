@@ -20,3 +20,7 @@ build
 logs
 *.log
 .sewing-kit
+
+# Built graphql type definitions
+app/types/graphql/types
+*.graphql.d.ts
