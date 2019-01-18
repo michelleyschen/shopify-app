@@ -1,1 +1,1 @@
-export {App as default} from './foundation';
+export {App as default, createGraphQLClient} from './foundation';
