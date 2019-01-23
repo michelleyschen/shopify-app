@@ -7,7 +7,7 @@ import {middleware as sewingKitMiddleware} from '@shopify/sewing-kit-koa';
 import graphQLProxy from '@shopify/koa-shopify-graphql-proxy';
 
 import {ip, port, assetPrefix} from '../config/server';
-import {password} from '../config/app';
+import {password, hostName} from '../config/app';
 
 import {renderApp, noCache} from './middleware';
 
@@ -16,7 +16,7 @@ app.keys = [password];
 
 app.use(session(app));
 
-app.use(graphQLProxy());
+app.use(graphQLProxy({shop: hostName, password}));
 
 app.use(sewingKitMiddleware({assetPrefix}));
 
