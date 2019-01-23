@@ -1,6 +1,7 @@
 import {join} from 'path';
 import {Env, Plugins} from '@shopify/sewing-kit';
 import {assetPrefix, ip, port} from './config/server';
+import {apiKey} from './config/app';
 
 const tests = join(__dirname, 'tests');
 
@@ -41,6 +42,9 @@ module.exports = function sewingKitConfig(plugins: Plugins, env: Env) {
         config.globals['ts-jest'].diagnostics = false;
         config.globals['ts-jest'].isolatedModules = true;
         return config;
+      }),
+      plugins.graphql({
+        schema: `https://app.myshopify.com/services/graphql/introspection/merchant?api_client_api_key=${apiKey}`,
       }),
     ],
   };

@@ -4,6 +4,7 @@ import Koa from 'koa';
 import session from 'koa-session';
 
 import {middleware as sewingKitMiddleware} from '@shopify/sewing-kit-koa';
+import graphQLProxy from '@shopify/koa-shopify-graphql-proxy';
 
 import {ip, port, assetPrefix} from '../config/server';
 import {password} from '../config/app';
@@ -14,6 +15,8 @@ const app = new Koa();
 app.keys = [password];
 
 app.use(session(app));
+
+app.use(graphQLProxy());
 
 app.use(sewingKitMiddleware({assetPrefix}));
 
