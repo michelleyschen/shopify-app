@@ -24,6 +24,8 @@ export default async function renderApp(ctx: Context) {
   // solve this...
   const graphQLClient = createGraphQLClient({
     server: true,
+    shop: ctx.session && ctx.session.shop,
+    accessToken: ctx.session && ctx.session.accessToken,
   });
 
   const app = (
