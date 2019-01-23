@@ -19,6 +19,7 @@
     "nuke": "sewing-kit nuke"
   },
   "dependencies": {
+    "@shopify/admin-graphql-api-utilities": "^0.0.4",
     "@shopify/browserslist-config": "^1.0.3",
     "@shopify/javascript-utilities": "^2.4.0",
     "@shopify/network": "^1.2.2",
