@@ -9,6 +9,7 @@ import {ServerManager, applyToContext} from '@shopify/react-network/server';
 import {Assets} from '@shopify/sewing-kit-koa';
 
 import App, {createGraphQLClient} from '../../app';
+import {password, hostName} from '../../config/app';
 
 export default async function renderApp(ctx: Context) {
   const {assets} = ctx.state as {assets: Assets};
@@ -24,6 +25,8 @@ export default async function renderApp(ctx: Context) {
   // solve this...
   const graphQLClient = createGraphQLClient({
     server: true,
+    shop: hostName,
+    accessToken: password,
   });
 
   const app = (

@@ -22,6 +22,7 @@
     "@shopify/admin-graphql-api-utilities": "^0.0.4",
     "@shopify/browserslist-config": "^1.0.3",
     "@shopify/javascript-utilities": "^2.4.0",
+    "@shopify/koa-shopify-graphql-proxy": "^2.1.5",
     "@shopify/network": "^1.2.2",
     "@shopify/polaris": "^3.4.0",
     "@shopify/polyfills": "^0.0.5",

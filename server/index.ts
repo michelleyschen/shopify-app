@@ -4,14 +4,25 @@ import Koa from 'koa';
 import session from 'koa-session';
 
 import {middleware as sewingKitMiddleware} from '@shopify/sewing-kit-koa';
+import graphQLProxy from '@shopify/koa-shopify-graphql-proxy';
 
 import {ip, port, assetPrefix} from '../config/server';
+import {password, hostName} from '../config/app';
 
 import {renderApp, noCache} from './middleware';
 
 const app = new Koa();
 
 app.use(session(app));
+
+app.use(
+  graphQLProxy({
+    /* eslint-disable typescript/no-non-null-assertion */
+    shop: hostName!,
+    password: password!,
+    /* eslint-enable typescript/no-non-null-assertion */
+  }),
+);
 
 app.use(sewingKitMiddleware({assetPrefix}));
 
