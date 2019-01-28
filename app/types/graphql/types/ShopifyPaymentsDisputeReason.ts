@@ -1,0 +1,15 @@
+export enum ShopifyPaymentsDisputeReason {
+  Fraudulent = "FRAUDULENT",
+  General = "GENERAL",
+  Unrecognized = "UNRECOGNIZED",
+  Duplicate = "DUPLICATE",
+  SubscriptionCancelled = "SUBSCRIPTION_CANCELLED",
+  ProductUnacceptable = "PRODUCT_UNACCEPTABLE",
+  ProductNotReceived = "PRODUCT_NOT_RECEIVED",
+  CreditNotProcessed = "CREDIT_NOT_PROCESSED",
+  IncorrectAccountDetails = "INCORRECT_ACCOUNT_DETAILS",
+  InsufficientFunds = "INSUFFICIENT_FUNDS",
+  BankCannotProcess = "BANK_CANNOT_PROCESS",
+  DebitNotAuthorized = "DEBIT_NOT_AUTHORIZED",
+  CustomerInitiated = "CUSTOMER_INITIATED",
+}

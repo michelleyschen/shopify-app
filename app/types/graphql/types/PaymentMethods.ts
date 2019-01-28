@@ -1,0 +1,16 @@
+export enum PaymentMethods {
+  Visa = "VISA",
+  Mastercard = "MASTERCARD",
+  Discover = "DISCOVER",
+  AmericanExpress = "AMERICAN_EXPRESS",
+  DinersClub = "DINERS_CLUB",
+  Jcb = "JCB",
+  Dankort = "DANKORT",
+  Maestro = "MAESTRO",
+  Forbrugsforeningen = "FORBRUGSFORENINGEN",
+  Paypal = "PAYPAL",
+  Bogus = "BOGUS",
+  Bitcoin = "BITCOIN",
+  Litecoin = "LITECOIN",
+  Dogecoin = "DOGECOIN",
+}

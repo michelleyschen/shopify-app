@@ -1,0 +1,17 @@
+export enum HomeCardLayout {
+  Simple = "SIMPLE",
+  Announcement = "ANNOUNCEMENT",
+  Achievement = "ACHIEVEMENT",
+  Content = "CONTENT",
+  LineGraph = "LINE_GRAPH",
+  Table = "TABLE",
+  StackableTable = "STACKABLE_TABLE",
+  Countdown = "COUNTDOWN",
+  Video = "VIDEO",
+  ActionList = "ACTION_LIST",
+  FeaturedAnnouncement = "FEATURED_ANNOUNCEMENT",
+  Comparison = "COMPARISON",
+  BookmarkCard = "BOOKMARK_CARD",
+  Blog = "BLOG",
+  Progress = "PROGRESS",
+}

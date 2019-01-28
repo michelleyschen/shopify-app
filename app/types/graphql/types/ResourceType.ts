@@ -1,0 +1,17 @@
+export enum ResourceType {
+  Orders = "ORDERS",
+  DraftOrders = "DRAFT_ORDERS",
+  Products = "PRODUCTS",
+  Variants = "VARIANTS",
+  Collections = "COLLECTIONS",
+  Pages = "PAGES",
+  Blogs = "BLOGS",
+  Articles = "ARTICLES",
+  Customers = "CUSTOMERS",
+  PriceRules = "PRICE_RULES",
+  AbandonedCheckouts = "ABANDONED_CHECKOUTS",
+  Apps = "APPS",
+  Checkouts = "CHECKOUTS",
+  Discounts = "DISCOUNTS",
+  Marketing = "MARKETING",
+}

@@ -1,0 +1,17 @@
+export enum FulfillmentDisplayStatus {
+  AttemptedDelivery = "ATTEMPTED_DELIVERY",
+  Canceled = "CANCELED",
+  Confirmed = "CONFIRMED",
+  Delivered = "DELIVERED",
+  Failure = "FAILURE",
+  Fulfilled = "FULFILLED",
+  InTransit = "IN_TRANSIT",
+  LabelPrinted = "LABEL_PRINTED",
+  LabelPurchased = "LABEL_PURCHASED",
+  LabelVoided = "LABEL_VOIDED",
+  MarkedAsFulfilled = "MARKED_AS_FULFILLED",
+  NotDelivered = "NOT_DELIVERED",
+  OutForDelivery = "OUT_FOR_DELIVERY",
+  ReadyForPickup = "READY_FOR_PICKUP",
+  Submitted = "SUBMITTED",
+}
