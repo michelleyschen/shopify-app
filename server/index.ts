@@ -6,10 +6,12 @@ import session from 'koa-session';
 import {middleware as sewingKitMiddleware} from '@shopify/sewing-kit-koa';
 
 import {ip, port, assetPrefix} from '../config/server';
+import {password} from '../config/app';
 
 import {renderApp, noCache} from './middleware';
 
 const app = new Koa();
+app.keys = [password];
 
 app.use(session(app));
 
