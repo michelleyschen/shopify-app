@@ -5,6 +5,8 @@ import {Html, Manager as HtmlManager, render} from '@shopify/react-html/server';
 import {ServerManager, applyToContext} from '@shopify/react-network/server';
 
 import {Assets} from '@shopify/sewing-kit-koa';
+
+import {apiKey} from '../../config/app';
 import App from '../../app';
 
 export default async function renderApp(ctx: Context) {
@@ -21,6 +23,8 @@ export default async function renderApp(ctx: Context) {
       location={ctx.request.url}
       htmlManager={htmlManager}
       networkManager={networkManager}
+      apiKey={apiKey}
+      shop={ctx.session && ctx.session.shop}
     />
   );
 
